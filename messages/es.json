@@ -1,9 +1,10 @@
 {
   "Home": {
     "Nav": {
-      "Home": "Inicio",
-      "MusicVideos": "Videos Musicales",
-      "Contact": "Contactanos"
+      "Home": "INICIO",
+      "MusicVideos": "VIDEOS MUSICALES",
+      "Contact": "CONTACTANOS",
+      "Groups": "GRUPOS MUSICALES"
     }
   }
 }

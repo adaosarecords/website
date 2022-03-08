@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
-import { useTranslations } from 'next-intl'
 import Navbar from '../components/navbar/navbar'
+import Layout from '../components/layout/layout'
 
 export async function getStaticProps({ locale }) {
   return {
@@ -12,20 +10,17 @@ export async function getStaticProps({ locale }) {
   }
 }
 
-export default function Home() {
+export default function Groups() {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Adaosa Records</title>
         <meta name='description' content='Adaosa records music productions' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Navbar />
-      <main className={styles.main}></main>
-
-      <footer className={styles.footer}>
-        <p>footer sup</p>
-      </footer>
-    </div>
+      <main>
+        <h1>Groups</h1>
+      </main>
+    </Layout>
   )
 }
