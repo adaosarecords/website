@@ -58,6 +58,18 @@ export default function Navbar() {
               {t('Contact')}
             </a>
           </Link>
+          <a href='https://www.youtube.com/c/AdaosaR%C3%A9cords'>
+            <span className='fa-brands fa-youtube' />
+          </a>
+          <a href='https://www.facebook.com/adaosarecords/'>
+            <span className='fa-brands fa-facebook' />
+          </a>
+          <a href='https://www.instagram.com/adaosarecords/?hl=en'>
+            <span className='fa-brands fa-instagram' />
+          </a>
+          <a href='https://twitter.com/adaoproduccion'>
+            <span className='fa-brands fa-twitter' />
+          </a>
         </div>
       </div>
     </nav>
