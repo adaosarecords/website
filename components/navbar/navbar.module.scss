@@ -1,0 +1,47 @@
+.container {
+  font-weight: 600;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: $color-navbar-bg;
+
+  @include responsive(phone) {
+    height: 3rem;
+    padding-top: 0.5rem;
+  }
+
+  &__innerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16%;
+    padding-right: 16%;
+
+    @include responsive(tab_large) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  &__rightContent {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    border-radius: 50%;
+  }
+  span {
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
