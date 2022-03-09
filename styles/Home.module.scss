@@ -1,15 +1,37 @@
 .studioRecordings {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  @include responsive(tab_medium) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @include responsive(phone) {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
 
   & > h1 {
     margin-bottom: 2.5rem;
+
+    @include responsive(phone) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   .albumContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
+
+    @include responsive(tab_portrait) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include responsive(phone) {
+      grid-template-columns: auto;
+    }
 
     &__card {
       font-family: 'Montserrat';
@@ -24,12 +46,15 @@
         margin: 0;
         margin-top: 0.2rem;
         color: rgb(199, 199, 199);
-        font-size: 0.9rem;
       }
     }
 
     &_text {
       margin-top: 1rem;
+
+      @include responsive(phone) {
+        margin-top: 0.5rem;
+      }
     }
 
     &__btn {

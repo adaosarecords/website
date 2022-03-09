@@ -4,9 +4,12 @@
   @include responsive(phone) {
     margin: 1rem 1rem;
   }
-  @include responsive(tab_large) {
+  @include responsive(tab_medium) {
     margin: 2rem 2rem;
   }
+  // @include responsive(tab_large) {
+  //   margin: 2rem 2rem;
+  // }
   // background-color: red;
   // background-color: green;
 }

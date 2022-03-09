@@ -1,20 +1,26 @@
 /* Media query manager */
 @mixin responsive($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 40.5em) {
+    @media only screen and (max-width: 38em) {
       // 600px --> 600 / 16
       @content;
     }
   }
 
+  @if $breakpoint == tab_portrait {
+    @media only screen and (max-width: 64em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == tab_medium {
-    @media only screen and (max-width: 65em) {
+    @media only screen and (max-width: 100em) {
       @content;
     }
   }
 
   @if $breakpoint == tab_large {
-    @media only screen and (max-width: 86em) {
+    @media only screen and (max-width: 120em) {
       @content;
     }
   }
