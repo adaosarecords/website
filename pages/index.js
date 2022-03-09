@@ -60,10 +60,12 @@ export default function Home({}) {
             <div className={styles.albumContainer}>
               {RECORDINGS.map((album) => {
                 return (
-                  <div key={album.url} className={styles.albumContainer__card}>
-                    <Image src={album.url} height={350} width={350} />
-                    <h3>{album.artist}</h3>
-                    <p>{album.subTitle}</p>
+                  <div className={styles.albumContainer__card} key={album.url}>
+                    <Image src={album.url} width={300} height={300} />
+                    <div className={styles.albumContainer_text}>
+                      <h2>{album.artist}</h2>
+                      <p>{album.subTitle}</p>
+                    </div>
                     {album.youtubeUrl && (
                       <div className={styles.albumContainer__btn}>
                         <a href={`${album.youtubeUrl}`}>
