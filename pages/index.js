@@ -37,6 +37,7 @@ export default function Home({}) {
             loop={true}
             width='100%'
             height='100%'
+            playsinline
             volume={1}
             muted={isMuted}
             controls={false}
