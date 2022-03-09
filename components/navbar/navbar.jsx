@@ -34,24 +34,38 @@ export default function Navbar() {
         </Link>
         <div className={styles.container__rightContent}>
           <Link href='/'>
-            <a className={router.asPath === '/' ? styles.active : ''}>
+            <a
+              className={router.asPath === '/' ? styles.active : styles.default}
+            >
               {t('Home')}
             </a>
           </Link>
           <Link href='/music-videos'>
             <a
-              className={router.asPath === '/music-videos' ? styles.active : ''}
+              className={
+                router.asPath === '/music-videos'
+                  ? styles.active
+                  : styles.default
+              }
             >
               {t('MusicVideos')}
             </a>
           </Link>
           <Link href='/groups'>
-            <a className={router.asPath === '/groups' ? styles.active : ''}>
+            <a
+              className={
+                router.asPath === '/groups' ? styles.active : styles.default
+              }
+            >
               {t('Groups')}
             </a>
           </Link>
           <Link href='/contact'>
-            <a className={router.asPath === '/contact' ? styles.active : ''}>
+            <a
+              className={
+                router.asPath === '/contact' ? styles.active : styles.default
+              }
+            >
               {t('Contact')}
             </a>
           </Link>

@@ -22,7 +22,7 @@ export default function Home() {
   const [isMuted, setIsMuted] = React.useState(true)
 
   return (
-    <Layout>
+    <Layout home>
       <Head>
         <title>Adaosa Records</title>
         <meta name='description' content='Adaosa records music productions' />
@@ -41,6 +41,7 @@ export default function Home() {
             volume={1}
             muted={isMuted}
           />
+
           {isMuted ? (
             <i
               className={'fa-solid fa-volume-xmark'}
@@ -53,6 +54,7 @@ export default function Home() {
             />
           )}
         </header>
+        <section></section>
       </main>
     </Layout>
   )
