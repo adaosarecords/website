@@ -23,7 +23,7 @@ i.fa-solid {
   position: absolute;
   height: 3rem;
   width: 3rem;
-  top: 30rem;
+  top: 25rem;
   right: 10rem;
   cursor: pointer;
   border-radius: 50%;
@@ -33,12 +33,12 @@ i.fa-solid {
   transition: all 0.3s;
 
   @include responsive(tab_medium) {
-    top: 30rem;
+    top: 15rem;
   }
 
   @include responsive(phone) {
-    top: 20rem;
-    right: 8rem;
+    top: 8rem;
+    right: 4rem;
   }
 
   & > * {
