@@ -21,6 +21,14 @@ export async function getStaticProps({ locale }) {
 export default function Home({}) {
   const [isMuted, setIsMuted] = React.useState(true)
   const t = useTranslations('Home')
+
+  React.useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+    })
+  }, [])
+
   return (
     <>
       <Head>
