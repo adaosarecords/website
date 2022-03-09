@@ -1,6 +1,8 @@
-export default function Contact() {
+import styles from './footer.module.scss'
+
+export default function Footer() {
   return (
-    <footer>
+    <footer className={styles.container}>
       <p>footer</p>
     </footer>
   )

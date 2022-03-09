@@ -8,6 +8,8 @@
   background-color: transparent;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  transition-timing-function: ease-in;
+  transition: all 1s;
 
   &__innerWrapper {
     display: flex;
@@ -19,10 +21,6 @@
     align-items: center;
     justify-content: center;
 
-    @include responsive(tab_medium) {
-      display: none;
-    }
-
     & > a {
       margin-right: 2rem;
       height: 1.6rem;
@@ -31,6 +29,10 @@
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px;
       transition: all 0.4s;
+
+      @include responsive(tab_medium) {
+        display: none;
+      }
 
       &:hover {
         transition: all 0.4s;

@@ -21,6 +21,13 @@ span.fa-brands {
   font-size: 22px !important;
 }
 
+span.fa-bars {
+  font-size: 22px !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 i.fa-solid {
   position: absolute;
   height: 3rem;
@@ -36,6 +43,7 @@ i.fa-solid {
 
   @include responsive(tab_medium) {
     top: 15rem;
+    right: 6rem;
   }
 
   @include responsive(phone) {
