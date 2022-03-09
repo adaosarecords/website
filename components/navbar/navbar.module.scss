@@ -92,5 +92,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    & > a {
+      padding: 0 1rem;
+    }
   }
 }

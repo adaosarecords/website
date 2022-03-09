@@ -23,4 +23,16 @@ export const RECORDINGS = [
     youtubeUrl: 'https://www.youtube.com/watch?v=pMYs38dd6xM',
     spotifyUrl: 'https://open.spotify.com/track/31PRJwWQp86zXInJ3hQGQw',
   },
+  {
+    url: '/images/recordings/horizontes.jpg',
+    artist: 'Grupo Horizontes De Guerrero 2017',
+    subTitle: 'Musica Campirana',
+    youtubeUrl: 'https://www.youtube.com/watch?v=CFtoXp_MEEQ',
+  },
+  {
+    url: '/images/recordings/nueva-generacion.jpg',
+    artist: 'Nueva Generación Musical 2017',
+    subTitle: "Grabado En Estudios De Adao'sa Records",
+    youtubeUrl: 'https://www.youtube.com/watch?v=QEr-WbV6bQg',
+  },
 ]

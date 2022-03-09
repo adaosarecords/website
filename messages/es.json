@@ -11,5 +11,10 @@
       "Watch": "VER EN YOUTUBE",
       "Spotify": "VER EN SPOTIFY"
     }
+  },
+  "Footer": {
+    "SubTitle": "Lo Mejor De La Música Costeña",
+    "Rights": "Todos Los Derechos Reservados",
+    "Developer": "Desarrollado por"
   }
 }
