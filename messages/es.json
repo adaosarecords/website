@@ -7,8 +7,9 @@
       "Groups": "GRUPOS MUSICALES"
     },
     "StudioRecordings": {
-      "Title": "GRABACIONES EN EL ESTUDIO",
-      "Watch": "VER EN YOUTUBE"
+      "Title": "GRABACIONES DEL ESTUDIO",
+      "Watch": "VER EN YOUTUBE",
+      "Spotify": "VER EN SPOTIFY"
     }
   }
 }

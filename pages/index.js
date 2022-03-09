@@ -61,12 +61,23 @@ export default function Home({}) {
               {RECORDINGS.map((album) => {
                 return (
                   <div key={album.url} className={styles.albumContainer__card}>
-                    <Image src={album.url} height={300} width={300} />
+                    <Image src={album.url} height={350} width={350} />
                     <h3>{album.artist}</h3>
                     <p>{album.subTitle}</p>
-                    <div className={styles.albumContainer__btn}>
-                      <a href=''>{t('StudioRecordings.Watch')}</a>
-                    </div>
+                    {album.youtubeUrl && (
+                      <div className={styles.albumContainer__btn}>
+                        <a href={`${album.youtubeUrl}`}>
+                          {t('StudioRecordings.Watch')}
+                        </a>
+                      </div>
+                    )}
+                    {album.spotifyUrl && (
+                      <div className={styles.albumContainer__btn}>
+                        <a href={`${album.spotifyUrl}`}>
+                          {t('StudioRecordings.Spotify')}
+                        </a>
+                      </div>
+                    )}
                   </div>
                 )
               })}
