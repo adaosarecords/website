@@ -48,7 +48,7 @@ i.fa-solid {
   height: 3rem;
   width: 3rem;
   top: 25rem;
-  right: 10rem;
+  right: 4rem;
   cursor: pointer;
   border-radius: 50%;
   padding: 1rem;
@@ -58,12 +58,12 @@ i.fa-solid {
 
   @include responsive(tab_medium) {
     top: 15rem;
-    right: 6rem;
+    right: 2rem;
   }
 
   @include responsive(phone) {
     top: 8rem;
-    right: 4rem;
+    right: 1.8rem;
   }
 
   & > * {

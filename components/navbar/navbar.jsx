@@ -44,7 +44,8 @@ export default function Navbar() {
         className={styles.mobileMenu}
         style={{
           opacity: isMenuOpen ? 1 : 0,
-          zIndex: isMenuOpen ? 100 : -100,
+          right: isMenuOpen ? '0' : '-100vw',
+          zIndex: isMenuOpen ? 100 : -1000000,
           transition: 'all 300ms ease-out',
         }}
       >
