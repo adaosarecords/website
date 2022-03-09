@@ -1,9 +1,5 @@
 import styles from './footer.module.scss'
 
 export default function Footer() {
-  return (
-    <footer className={styles.container}>
-      <p>footer</p>
-    </footer>
-  )
+  return <footer className={styles.container}>{/* <p>footer</p> */}</footer>
 }

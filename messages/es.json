@@ -5,6 +5,10 @@
       "MusicVideos": "VIDEOS MUSICALES",
       "Contact": "CONTACTANOS",
       "Groups": "GRUPOS MUSICALES"
+    },
+    "StudioRecordings": {
+      "Title": "GRABACIONES EN EL ESTUDIO",
+      "Watch": "VER EN YOUTUBE"
     }
   }
 }

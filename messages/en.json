@@ -1,9 +1,14 @@
 {
   "Home": {
     "Nav": {
-      "Home": "Home",
-      "MusicVideos": "Music Videos",
-      "Contact": "Contact"
+      "Home": "HOME",
+      "MusicVideos": "MUSIC VIDEOS",
+      "Contact": "CONTACT",
+      "Groups": "MUSIC GROUPS"
+    },
+    "StudioRecordings": {
+      "Title": "STUDIO RECORDINGS",
+      "Watch": "WATCH IN YOUTUBE"
     }
   }
 }

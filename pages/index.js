@@ -1,14 +1,14 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Layout from '../components/layout/layout'
 import ReactPlayer from 'react-player/lazy'
+import { useTranslations } from 'next-intl'
 
 import styles from '../styles/Home.module.scss'
 import Navbar from '../components/navbar/navbar'
-import Domingo from '../public/images/domingo.jpg'
+import { RECORDINGS } from '../data/recordings'
 
 export async function getStaticProps({ locale }) {
   return {
@@ -20,42 +20,60 @@ export async function getStaticProps({ locale }) {
 
 export default function Home({}) {
   const [isMuted, setIsMuted] = React.useState(true)
-
+  const t = useTranslations('Home')
   return (
-    <Layout home>
+    <>
       <Head>
         <title>Adaosa Records</title>
         <meta name='description' content='Adaosa records music productions' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main>
-        <header>
-          <ReactPlayer
-            className='react-player fixed-bottom'
-            url='intro.mp4'
-            playing={true}
-            loop={true}
-            width='100%'
-            height='100%'
-            playsinline
-            volume={1}
-            muted={isMuted}
-            controls={false}
+      <header>
+        <ReactPlayer
+          className='react-player fixed-bottom'
+          url='intro.mp4'
+          playing={true}
+          loop={true}
+          width='100%'
+          height='100%'
+          playsinline
+          volume={1}
+          muted={isMuted}
+          controls={false}
+        />
+        {isMuted ? (
+          <i
+            className={'fa-solid fa-volume-xmark'}
+            onClick={() => setIsMuted(false)}
           />
-          {isMuted ? (
-            <i
-              className={'fa-solid fa-volume-xmark'}
-              onClick={() => setIsMuted(false)}
-            />
-          ) : (
-            <i
-              onClick={() => setIsMuted(true)}
-              className='fa-solid fa-volume-high'
-            />
-          )}
-        </header>
-        <section></section>
-      </main>
-    </Layout>
+        ) : (
+          <i
+            onClick={() => setIsMuted(true)}
+            className='fa-solid fa-volume-high'
+          />
+        )}
+      </header>
+      <Layout home>
+        <main>
+          <section className={styles.studioRecordings}>
+            <h1>{t('StudioRecordings.Title')}</h1>
+            <div className={styles.albumContainer}>
+              {RECORDINGS.map((album) => {
+                return (
+                  <div key={album.url} className={styles.albumContainer__card}>
+                    <Image src={album.url} height={300} width={300} />
+                    <h3>{album.artist}</h3>
+                    <p>{album.subTitle}</p>
+                    <div className={styles.albumContainer__btn}>
+                      <a href=''>{t('StudioRecordings.Watch')}</a>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </section>
+        </main>
+      </Layout>
+    </>
   )
 }
