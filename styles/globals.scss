@@ -22,7 +22,22 @@ span.fa-brands {
 }
 
 span.fa-bars {
-  font-size: 22px !important;
+  font-size: 30px !important;
+  display: none;
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include responsive(tab_medium) {
+    display: block;
+  }
+}
+
+span.fa-xmark {
+  position: absolute;
+  font-size: 35px !important;
+  top: 1.5rem;
+  right: 2rem;
   &:hover {
     cursor: pointer;
   }

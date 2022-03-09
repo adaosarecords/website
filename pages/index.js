@@ -31,7 +31,6 @@ export default function Home() {
       <main>
         <header>
           <ReactPlayer
-            onReady={() => console.log('playing')}
             className='react-player fixed-bottom'
             url='intro.mp4'
             width='100%'
