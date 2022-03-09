@@ -14,12 +14,9 @@ export async function getStaticProps({ locale }) {
   }
 }
 
-// className={router.asPath === href ? styles.active : styles.default}>
-
 export default function Navbar() {
   const t = useTranslations('Home.Nav')
   const router = useRouter()
-  console.log('rotuer', router.asPath)
 
   return (
     <nav className={styles.container}>

@@ -2,7 +2,11 @@ import '../styles/globals.scss'
 import Script from 'next/script'
 import { NextIntlProvider } from 'next-intl'
 
+import SwiperCore, { Autoplay } from 'swiper'
+import 'swiper/css'
+
 function MyApp({ Component, pageProps }) {
+  SwiperCore.use([Autoplay])
   return (
     <NextIntlProvider locale='es' messages={pageProps.messages}>
       <Component {...pageProps} />
