@@ -22,7 +22,7 @@ export default function Footer() {
       </div>
       <p>{t('SubTitle')}</p>
       <p>
-        &copy; {new Date().getFullYear()} Adao'sa Records. {t('Rights')}
+        &copy; {new Date().getFullYear()} Adao&apos;sa Records. {t('Rights')}
       </p>
       <p className={styles.developer}>
         {t('Developer')}{' '}
