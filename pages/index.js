@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Layout from '../components/layout/layout'
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/lazy'
 
 import styles from '../styles/Home.module.scss'
 import Navbar from '../components/navbar/navbar'
@@ -18,7 +18,7 @@ export async function getStaticProps({ locale }) {
   }
 }
 
-export default function Home() {
+export default function Home({}) {
   const [isMuted, setIsMuted] = React.useState(true)
 
   return (
@@ -33,14 +33,14 @@ export default function Home() {
           <ReactPlayer
             className='react-player fixed-bottom'
             url='intro.mp4'
-            width='100%'
-            height='100%'
             playing={true}
             loop={true}
+            width='100%'
+            height='100%'
             volume={1}
             muted={isMuted}
+            controls={false}
           />
-
           {isMuted ? (
             <i
               className={'fa-solid fa-volume-xmark'}
