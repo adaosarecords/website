@@ -16,6 +16,10 @@ export async function getStaticProps({ locale }) {
 export default function Contact() {
   const t = useTranslations('Contact')
 
+  const submitForm = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <Layout>
       <Head>
@@ -49,6 +53,24 @@ export default function Contact() {
           <div className={styles.divider}></div>
           <div className={styles.right}>
             <h2>{t('Questions')}</h2>
+            <form className={styles.form}>
+              <div className={styles.formItem}>
+                <label htmlFor='name'>{t('Name')}</label>
+                <input placeholder='mi nombre' type='text' />
+              </div>
+              <div className={styles.formItem}>
+                <label htmlFor='name'>{t('Mail')}</label>
+                <input placeholder='micorreo@ejemplo.com' type='text' />
+              </div>
+              <div className={styles.formItem}>
+                <label htmlFor='name'>{t('Message')}</label>
+                {/* <input placeholder='micorreo@ejemplo.com' type='text' /> */}
+                <textarea placeholder='mi mensaje' rows={10} />
+              </div>
+              <div className={styles.formBtn}>
+                <button onClick={submitForm}>{t('Send')}</button>
+              </div>
+            </form>
           </div>
         </div>
       </main>

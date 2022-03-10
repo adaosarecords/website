@@ -19,6 +19,10 @@
   },
   "Contact": {
     "Info": "Informacion",
-    "Questions": "¿Tienes Preguntas?"
+    "Questions": "¿Tienes Preguntas?",
+    "Name": "Tu Nombre",
+    "Mail": "Correo Electronico",
+    "Message": "Mensaje",
+    "Send": "Enviar"
   }
 }
