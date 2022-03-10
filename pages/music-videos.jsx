@@ -57,7 +57,7 @@ export default function MusicVideos() {
               width='100%'
               height='100%'
               playsinline
-              volume={0.04}
+              volume={1}
               controls={true}
             />
           </div>
