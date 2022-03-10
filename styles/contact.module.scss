@@ -1,13 +1,25 @@
 .container {
+  margin-top: 7rem;
   display: flex;
+  // text-align: center;
 }
 
 .left {
   flex-grow: 1;
-  //   background-color: red;
+  // border-right: solid 2px $color-primary;
 
   .info {
     margin-top: 4rem;
+  }
+
+  .infoItem {
+    display: flex;
+    align-items: center;
+
+    & > :nth-child(2) {
+      position: relative;
+      left: 1.5rem;
+    }
   }
 }
 
@@ -16,5 +28,13 @@
 }
 
 .icon {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  color: $color-primary;
+}
+
+.divider {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  background-color: $color-primary;
+  width: 1.2px;
 }

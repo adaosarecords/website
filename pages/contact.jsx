@@ -30,9 +30,23 @@ export default function Contact() {
             <div className={styles.info}>
               <div className={styles.infoItem}>
                 <i className={`fa-solid fa-envelope ${styles.icon}`}></i>
+                <p>adaosarecords@hotmail.com</p>
+              </div>
+              <div className={styles.infoItem}>
+                <i className={`fa-solid fa-phone ${styles.icon}`}></i>
+                <p>744 141-0876</p>
+              </div>
+              <div className={styles.infoItem}>
+                <i className={`fa-solid fa-location-dot ${styles.icon}`}></i>
+                <p>San Marcos, Gro. Mexico</p>
+              </div>
+              <div className={styles.infoItem}>
+                <i className={`fa-solid fa-clock ${styles.icon}`}></i>
+                <p>Horas de Operacion: 9:00 AM - 05:00 PM</p>
               </div>
             </div>
           </div>
+          <div className={styles.divider}></div>
           <div className={styles.right}>
             <h2>{t('Questions')}</h2>
           </div>
