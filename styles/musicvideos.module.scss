@@ -1,10 +1,19 @@
 .playerWrapper {
   margin-bottom: 10rem;
+
+  @include responsive(phone) {
+    margin-bottom: 5rem;
+  }
 }
 
 .mainPlayer {
   height: 28rem;
   margin-bottom: 2rem;
+
+  @include responsive(phone) {
+    height: 15rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .sliderItem {
@@ -13,6 +22,10 @@
 
   img {
     object-fit: contain;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -20,4 +33,7 @@
   position: absolute;
   top: 1px;
   left: 5px;
+  @include responsive(phone) {
+    top: -20px;
+  }
 }
