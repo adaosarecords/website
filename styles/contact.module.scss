@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+}
+
+.left {
+  flex-grow: 1;
+  //   background-color: red;
+
+  .info {
+    margin-top: 4rem;
+  }
+}
+
+.right {
+  flex-grow: 1;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
