@@ -1,12 +1,21 @@
 import '../styles/globals.scss'
 import Script from 'next/script'
 import { NextIntlProvider } from 'next-intl'
-
-import SwiperCore, { Autoplay } from 'swiper'
+import SwiperCore, {
+  Autoplay,
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from 'swiper'
 import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar' // Pagination module
 
 function MyApp({ Component, pageProps }) {
-  SwiperCore.use([Autoplay])
+  SwiperCore.use([Autoplay, Navigation, Pagination])
+
   return (
     <NextIntlProvider locale='es' messages={pageProps.messages}>
       <Component {...pageProps} />

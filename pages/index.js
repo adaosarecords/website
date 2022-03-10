@@ -1,13 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Swiper, SwiperSlide } from 'swiper/react'
 import Layout from '../components/layout/layout'
 import ReactPlayer from 'react-player/lazy'
 import { useTranslations } from 'next-intl'
 
 import styles from '../styles/Home.module.scss'
-import Navbar from '../components/navbar/navbar'
 import { RECORDINGS } from '../data/recordings'
 
 export async function getStaticProps({ locale }) {
