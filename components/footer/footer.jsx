@@ -20,7 +20,9 @@ export default function Footer() {
           <span className='fa-brands fa-twitter' />
         </a>
       </div>
-      <p>{t('SubTitle')}</p>
+      <p style={{ fontFamily: 'Nothing You Could Do', fontSize: '18px' }}>
+        {t('SubTitle')}
+      </p>
       <p>
         &copy; {new Date().getFullYear()} Adao&apos;sa Records. {t('Rights')}
       </p>
