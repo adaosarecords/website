@@ -18,6 +18,21 @@ export async function getStaticProps({ locale }) {
 
 export default function MusicVideos() {
   const [currentVideo, setCurrentVideo] = React.useState(MUSIC_VIDEOS[0])
+  const [widthDimension, setWidthDimension] = React.useState(0)
+
+  const deriveScrollDimensions = () => {
+    const scrollWidth = window.innerWidth || document.documentElement.innerWidth
+    setWidthDimension(scrollWidth)
+
+    return () => {
+      window.removeEventListener('resize', deriveScrollDimensions)
+    }
+  }
+
+  React.useEffect(() => {
+    window.addEventListener('resize', deriveScrollDimensions)
+    deriveScrollDimensions()
+  }, [])
 
   return (
     <Layout>
@@ -53,7 +68,9 @@ export default function MusicVideos() {
               navigation
               pagination
               spaceBetween={50}
-              slidesPerView={3}
+              slidesPerView={
+                widthDimension < 680 ? 1 : widthDimension < 880 ? 2 : 3
+              }
               loop
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}
