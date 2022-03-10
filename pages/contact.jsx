@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import { useTranslations } from 'next-intl'
 
@@ -15,6 +16,10 @@ export async function getStaticProps({ locale }) {
 
 export default function Contact() {
   const t = useTranslations('Contact')
+  const [name, setName] = React.useState('')
+  const [email, setEmail] = React.useState('')
+  const [message, setMessage] = React.useState('')
+  const [nameErrorMessage, setNameErrorMessage] = React.useState('')
 
   const submitForm = (e) => {
     e.preventDefault()
@@ -56,16 +61,43 @@ export default function Contact() {
             <form className={styles.form}>
               <div className={styles.formItem}>
                 <label htmlFor='name'>{t('Name')}</label>
-                <input placeholder='mi nombre' type='text' />
+                <input
+                  style={{
+                    border: nameErrorMessage.length > 0 ? '3px solid red' : '',
+                  }}
+                  value={name}
+                  onChange={(e) => {
+                    setName(e.target.value)
+                    e.target.value.length > 0
+                      ? setNameErrorMessage('')
+                      : setNameErrorMessage('El campo no puede estar vacio')
+                  }}
+                  placeholder='mi nombre'
+                  type='text'
+                />
+                {nameErrorMessage.length > 0 && (
+                  <span className={styles.errorMessage}>
+                    {nameErrorMessage}
+                  </span>
+                )}
               </div>
               <div className={styles.formItem}>
-                <label htmlFor='name'>{t('Mail')}</label>
-                <input placeholder='micorreo@ejemplo.com' type='text' />
+                <label htmlFor='email'>{t('Mail')}</label>
+                <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder='micorreo@ejemplo.com'
+                  type='text'
+                />
               </div>
               <div className={styles.formItem}>
-                <label htmlFor='name'>{t('Message')}</label>
-                {/* <input placeholder='micorreo@ejemplo.com' type='text' /> */}
-                <textarea placeholder='mi mensaje' rows={10} />
+                <label htmlFor='text'>{t('Message')}</label>
+                <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder='mi mensaje'
+                  rows={10}
+                />
               </div>
               <div className={styles.formBtn}>
                 <button onClick={submitForm}>{t('Send')}</button>

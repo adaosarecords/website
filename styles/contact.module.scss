@@ -43,10 +43,11 @@
   .formItem {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
+    height: 91px;
 
     input {
       margin-top: 0.8rem;
-      margin-bottom: 2rem;
       padding: 0.6rem;
       border-radius: 5px;
       outline: none;
@@ -65,6 +66,11 @@
       font-family: 'Montserrat';
       font-size: 16px;
       color: #000;
+      border: 3px solid transparent;
+      outline: none;
+      &:focus {
+        border: 3px solid $color-primary;
+      }
     }
   }
 
@@ -93,5 +99,11 @@
         border: solid 2px $color-primary;
       }
     }
+  }
+
+  .errorMessage {
+    color: rgb(255, 56, 56);
+    margin: 0;
+    padding: 0;
   }
 }
