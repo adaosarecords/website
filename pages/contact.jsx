@@ -23,6 +23,7 @@ export default function Contact() {
   const [emailError, setEmailError] = React.useState('')
   const [messageError, setMessageError] = React.useState('')
   const [isFormValid, setIsFormValid] = React.useState(false)
+  const [isFormSubmitted, setIsFormSubmitted] = React.useState(false)
 
   React.useEffect(() => {
     if (
@@ -45,6 +46,13 @@ export default function Contact() {
 
   const submitForm = (e) => {
     console.log('submitedd')
+    setName('')
+    setEmail('')
+    setMessage('')
+    setIsFormSubmitted(true)
+    setTimeout(() => {
+      setIsFormSubmitted(false)
+    }, 3000)
     e.preventDefault()
   }
 
@@ -144,10 +152,21 @@ export default function Contact() {
                   <span className={styles.errorMessage}>{messageError}</span>
                 )}
               </div>
-              <div className={styles.formBtn}>
-                <button disabled={!isFormValid} onClick={submitForm}>
-                  {t('Send')}
-                </button>
+              <div className={styles.formFooter}>
+                {!isFormSubmitted ? (
+                  <div className={styles.formBtn}>
+                    <button disabled={!isFormValid} onClick={submitForm}>
+                      {t('Send')}
+                    </button>
+                  </div>
+                ) : (
+                  <div className={styles.successMessage}>
+                    <p>
+                      ¡Gracias! Nos pondremos en contacto contigo lo antes
+                      posible.
+                    </p>
+                  </div>
+                )}
               </div>
             </form>
           </div>

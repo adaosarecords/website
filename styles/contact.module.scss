@@ -114,9 +114,24 @@
     }
   }
 
+  .formFooter {
+    height: 52px;
+  }
+
   .errorMessage {
     color: rgb(255, 56, 56);
     margin: 0;
     padding: 0;
+  }
+
+  .successMessage {
+    max-width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 1;
+
+    p {
+      font-size: 16px;
+    }
   }
 }
