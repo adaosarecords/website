@@ -70,7 +70,7 @@ export default function Contact() {
             <div className={styles.info}>
               <div className={styles.infoItem}>
                 <i className={`fa-solid fa-envelope ${styles.icon}`}></i>
-                <p>adaosarecords@hotmail.com</p>
+                <p>adaosarecords2021@gmail.com</p>
               </div>
               <div className={styles.infoItem}>
                 <i className={`fa-solid fa-phone ${styles.icon}`}></i>
