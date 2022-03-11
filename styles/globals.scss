@@ -120,6 +120,9 @@ div.swiper-button-prev::after {
 
 div.swiper-button-prev {
   transition: all 0.3s;
+  @include responsive(phone) {
+    display: none;
+  }
   &:hover {
     transform: scale(1.1);
   }
@@ -136,6 +139,9 @@ div.swiper-button-next::after {
 }
 
 div.swiper-button-next {
+  @include responsive(phone) {
+    display: none;
+  }
   transition: all 0.3s;
   &:hover {
     transform: scale(1.1);
