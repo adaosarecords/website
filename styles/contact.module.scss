@@ -1,13 +1,30 @@
 .container {
   margin-top: 4rem;
   display: flex;
+
+  @include responsive(tab_portrait) {
+    margin-top: 2rem;
+  }
+
+  @include responsive(phone) {
+    display: block;
+  }
 }
 
 .left {
   flex-grow: 1;
 
+  @include responsive(phone) {
+    border-bottom: 1px solid $color-primary;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .info {
     margin-top: 4rem;
+    @include responsive(phone) {
+      margin-top: 2rem;
+    }
   }
 
   .infoItem {
@@ -35,11 +52,23 @@
   margin-right: 6rem;
   background-color: $color-primary;
   width: 1.2px;
+
+  @include responsive(tab_medium) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  @include responsive(tab_portrait) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 .form {
   margin-top: 4rem;
-
+  @include responsive(phone) {
+    margin-top: 2rem;
+  }
   .formTextArea {
     display: flex;
     flex-direction: column;
