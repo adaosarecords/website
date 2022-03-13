@@ -42,12 +42,7 @@ export default function MusicVideos() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
-        <h1
-          className={styles.heading}
-          // style={{ padding: '0', margin: '0', marginBottom: '20px' }}
-        >
-          {currentVideo.title}
-        </h1>
+        <h1 className={styles.heading}>{currentVideo.title}</h1>
         {/* player wrapper  */}
         <div className={styles.playerWrapper}>
           {/* main player  */}

@@ -7,7 +7,7 @@
 }
 
 .mainPlayer {
-  height: 28rem;
+  height: 35rem;
   margin-bottom: 2rem;
 
   @include responsive(phone) {
@@ -31,7 +31,7 @@
 
 .title {
   position: absolute;
-  top: 1px;
+  top: -10px;
   left: 5px;
   @include responsive(phone) {
     top: -10px;

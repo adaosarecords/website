@@ -48,6 +48,7 @@ export default function Home({}) {
           muted={isMuted}
           controls={false}
         />
+
         <div className={styles.mask} />
         {isMuted ? (
           <i
