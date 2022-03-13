@@ -11,6 +11,7 @@ body {
 h1 {
   font-family: 'Montserrat';
   font-size: 2.4rem;
+  color: $color-primary;
 
   @include responsive(phone) {
     font-size: 1.5rem;
@@ -40,7 +41,7 @@ p {
 }
 
 span.fa-brands {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 span.fa-bars {
@@ -111,9 +112,8 @@ i.fa-solid.fa-volume-high {
 
 // swiper styles
 div.swiper-button-prev::after {
-  color: #fff !important;
-  border-radius: 3px;
-  border: 2px solid #fff;
+  color: $color-primary !important;
+  border: 2px solid $color-primary;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 0.5rem;
@@ -131,9 +131,9 @@ div.swiper-button-prev {
 }
 
 div.swiper-button-next::after {
-  color: #fff !important;
-  border-radius: 3px;
-  border: 2px solid #fff;
+  color: $color-primary !important;
+  border-radius: 2px;
+  border: 2px solid $color-primary;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 0.5rem;
@@ -151,11 +151,11 @@ div.swiper-button-next {
 }
 
 .swiper-pagination-bullet-active {
-  color: #fff !important;
+  color: $color-primary !important;
 }
 .swiper-pagination-bullet-active {
-  background-color: #fff !important;
+  background-color: $color-primary !important;
 }
 .swiper-pagination-bullet {
-  background-color: #fff !important;
+  background-color: $color-primary !important;
 }

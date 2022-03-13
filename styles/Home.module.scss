@@ -1,10 +1,10 @@
 .featuredVideo {
   height: 30rem;
-  margin-bottom: 12rem;
+  margin-bottom: 14rem;
 
   @include responsive(tab_medium) {
     height: 25rem;
-    margin-bottom: 4rem;
+    margin-bottom: 12rem;
   }
 }
 
@@ -19,12 +19,6 @@
 }
 
 .studioRecordings {
-  // margin-top: 1rem;
-  @include responsive(tab_medium) {
-    // padding-top: 2rem;
-    // padding-bottom: 3rem;
-  }
-
   @include responsive(phone) {
     padding-top: 1rem;
     padding-bottom: 2rem;

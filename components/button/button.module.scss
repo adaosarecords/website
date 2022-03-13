@@ -9,11 +9,11 @@
     font-weight: 600;
     transition: all 0.3s;
     background-color: transparent;
-    border: solid 2px $color-primary;
+    border: solid 2px $color-secondary;
 
     &:hover {
-      background-color: $color-primary;
-      border: solid 2px $color-primary;
+      background-color: $color-secondary;
+      border: solid 2px $color-secondary;
     }
   }
 }

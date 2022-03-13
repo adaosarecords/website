@@ -1,7 +1,6 @@
 .container {
   margin: 2rem 25rem;
-  padding-bottom: 6rem;
-  // padding-top: 2rem;
+  padding-bottom: 12rem;
 
   @include responsive(tab_medium) {
     margin: 2rem 2rem;

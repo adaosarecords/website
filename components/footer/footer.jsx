@@ -20,7 +20,12 @@ export default function Footer() {
           <span className='fa-brands fa-twitter' />
         </a>
       </div>
-      <p style={{ fontFamily: 'Nothing You Could Do', fontSize: '18px' }}>
+      <p
+        style={{
+          fontFamily: 'Nothing You Could Do',
+          fontSize: '18px',
+        }}
+      >
         {t('SubTitle')}
       </p>
       <p>

@@ -7,7 +7,7 @@
   padding: 0 2rem;
   background-color: transparent;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   transition-timing-function: ease-in;
   transition: all 1s;
 
@@ -23,11 +23,7 @@
 
     & > a {
       margin-right: 2rem;
-      height: 1.6rem;
-      color: #fff;
-      border-bottom: 2px solid transparent;
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px;
+      color: $color-secondary;
       transition: all 0.4s;
 
       @include responsive(tab_medium) {
@@ -36,7 +32,8 @@
 
       &:hover {
         transition: all 0.4s;
-        border-bottom: 2px solid $color-primary;
+        color: $color-primary;
+        cursor: pointer !important;
       }
     }
   }
@@ -57,9 +54,9 @@
 }
 
 .active {
-  border-bottom: 2px solid $color-primary !important;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  color: $color-primary !important;
 }
 
 .mobileMenu {
@@ -81,6 +78,12 @@
 
     & > a {
       margin-bottom: 2rem;
+      color: $color-secondary;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-primary;
+      }
     }
   }
 
@@ -88,8 +91,15 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
     & > a {
       padding: 0 1rem;
+      color: $color-secondary;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-primary;
+      }
     }
   }
 }
