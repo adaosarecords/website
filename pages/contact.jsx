@@ -72,7 +72,7 @@ export default function Contact() {
       <main>
         <div className={styles.container}>
           <div className={styles.left}>
-            <h2>{t('Info')}</h2>
+            <h1>{t('Info')}</h1>
             <div className={styles.info}>
               <div className={styles.infoItem}>
                 <i className={`fa-solid fa-envelope ${styles.icon}`}></i>
@@ -94,7 +94,7 @@ export default function Contact() {
           </div>
           <div className={styles.divider}></div>
           <div className={styles.right}>
-            <h2>{t('Questions')}</h2>
+            <h1>{t('Questions')}</h1>
             <form className={styles.form}>
               <div className={styles.formItem}>
                 <label htmlFor='name'>{t('Name')}</label>

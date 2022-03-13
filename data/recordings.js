@@ -20,7 +20,7 @@ export const RECORDINGS = [
     url: '/images/recordings/kalebo.jpg',
     artist: 'Kalebo y Su Ritmo Costeño 2017',
     subTitle: "Grabado En Estudios De Adao'sa Records",
-    youtubeUrl: 'https://www.youtube.com/watch?v=pMYs38dd6xM',
+    youtubeUrl: 'https://www.youtube.com/watch?v=a8a3kKYBnMM',
     spotifyUrl: 'https://open.spotify.com/track/31PRJwWQp86zXInJ3hQGQw',
   },
   {

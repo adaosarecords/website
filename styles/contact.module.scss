@@ -137,12 +137,12 @@
       color: #fff;
       text-transform: uppercase;
       background-color: transparent;
-      border: solid 1px $color-primary;
+      border: solid 2px $color-primary;
 
       &:hover {
         cursor: pointer;
         background-color: $color-primary;
-        border: solid 1px $color-primary;
+        border: solid 2px $color-primary;
       }
     }
 

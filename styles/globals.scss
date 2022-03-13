@@ -55,6 +55,17 @@ span.fa-bars {
   }
 }
 
+span.fa-xmark {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  font-size: 35px !important;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 i.fa-solid.fa-volume-xmark,
 i.fa-solid.fa-volume-high {
   position: absolute;
