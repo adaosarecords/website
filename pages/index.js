@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl'
 
 import styles from '../styles/Home.module.scss'
 import { RECORDINGS } from '../data/recordings'
+import Button from '../components/button/button'
 
 export async function getStaticProps({ locale }) {
   return {
@@ -73,18 +74,18 @@ export default function Home({}) {
                       <p>{album.subTitle}</p>
                     </div>
                     {album.youtubeUrl && (
-                      <div className={styles.albumContainer__btn}>
+                      <Button>
                         <a href={`${album.youtubeUrl}`}>
                           {t('StudioRecordings.Watch')}
                         </a>
-                      </div>
+                      </Button>
                     )}
                     {album.spotifyUrl && (
-                      <div className={styles.albumContainer__btn}>
+                      <Button>
                         <a href={`${album.spotifyUrl}`}>
                           {t('StudioRecordings.Spotify')}
                         </a>
-                      </div>
+                      </Button>
                     )}
                   </div>
                 )

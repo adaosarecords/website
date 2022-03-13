@@ -1,0 +1,19 @@
+.container {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  & > a {
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    background-color: transparent;
+    border: solid 2px $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+      border: solid 2px $color-primary;
+    }
+  }
+}
