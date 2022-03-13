@@ -6,6 +6,11 @@
     height: 25rem;
     margin-bottom: 12rem;
   }
+
+  @include responsive(phone) {
+    height: 20rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .heading {
