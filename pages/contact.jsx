@@ -80,7 +80,7 @@ export default function Contact() {
               </div>
               <div className={styles.infoItem}>
                 <i className={`fa-solid fa-phone ${styles.icon}`}></i>
-                <p>744 141-0876</p>
+                <p>745 106 2396</p>
               </div>
               <div className={styles.infoItem}>
                 <i className={`fa-solid fa-location-dot ${styles.icon}`}></i>
