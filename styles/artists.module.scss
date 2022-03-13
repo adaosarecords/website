@@ -3,6 +3,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 
+  @include responsive(tab_portrait) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include responsive(phone) {
+    grid-template-columns: auto;
+  }
+
   .card {
     background-color: rgb(0, 0, 0);
     // background-color: pink;
@@ -28,7 +36,7 @@
   text-transform: uppercase;
   font-weight: 800;
   // position: absolute;
-  z-index: 1000;
+  z-index: 100;
   position: relative;
   padding-top: 1rem;
   bottom: 20.2rem;
