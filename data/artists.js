@@ -2,7 +2,7 @@ export const ARTISTS = [
   {
     id: 1,
     title: 'Los Valentes',
-    imageUrl: '/images/artists/valentes.jepg',
+    imageUrl: '/images/artists/valentes.jpeg',
   },
   {
     id: 2,
@@ -12,7 +12,7 @@ export const ARTISTS = [
   {
     id: 3,
     title: 'Los Donnys de Guerrero',
-    imageUrl: 'donnys',
+    imageUrl: '/images/artists/donnys.jpeg',
   },
   {
     id: 4,
@@ -22,7 +22,7 @@ export const ARTISTS = [
   {
     id: 5,
     title: 'Liz',
-    imageUrl: '/images/artists/schoci.jpeg',
+    imageUrl: '/images/artists/liz.jpeg',
   },
   {
     id: 6,
