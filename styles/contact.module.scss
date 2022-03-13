@@ -66,9 +66,11 @@
 
 .form {
   margin-top: 4rem;
+
   @include responsive(phone) {
     margin-top: 2rem;
   }
+
   .formTextArea {
     display: flex;
     flex-direction: column;
@@ -81,11 +83,15 @@
       padding: 0.6rem;
       font-family: inherit;
       font-size: inherit;
-      color: #000;
-      border: 3px solid transparent;
+      border: 1px solid #fff;
       outline: none;
+      background-color: transparent;
+      color: #fff;
+      transition: all 0.3s;
+
       &:focus {
-        border: 3px solid $color-primary;
+        transition: all 0.3s;
+        border: 1px solid $color-primary;
       }
     }
   }
@@ -93,7 +99,7 @@
   .formItem {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     height: 91px;
 
     input {
@@ -102,10 +108,14 @@
       border-radius: 5px;
       outline: none;
       font-size: 16px;
-      border: 3px solid transparent;
+      border: 1px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      transition: all 0.3s;
 
       &:focus {
-        border: 3px solid $color-primary;
+        transition: all 0.3s;
+        border: 1px solid $color-primary;
       }
     }
   }
@@ -127,12 +137,12 @@
       color: #fff;
       text-transform: uppercase;
       background-color: transparent;
-      border: solid 2px $color-primary;
+      border: solid 1px $color-primary;
 
       &:hover {
         cursor: pointer;
         background-color: $color-primary;
-        border: solid 2px $color-primary;
+        border: solid 1px $color-primary;
       }
     }
 

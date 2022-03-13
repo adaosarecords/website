@@ -100,7 +100,7 @@ export default function Contact() {
                 <label htmlFor='name'>{t('Name')}</label>
                 <input
                   style={{
-                    border: nameError.length > 0 ? '3px solid red' : '',
+                    border: nameError.length > 0 ? '1px solid red' : '',
                   }}
                   value={name}
                   onChange={(e) => {
@@ -120,7 +120,7 @@ export default function Contact() {
                 <label htmlFor='email'>{t('Mail')}</label>
                 <input
                   style={{
-                    border: emailError.length > 0 ? '3px solid red' : '',
+                    border: emailError.length > 0 ? '1px solid red' : '',
                   }}
                   value={email}
                   onChange={(e) => {
@@ -142,7 +142,7 @@ export default function Contact() {
                 <label htmlFor='text'>{t('Message')}</label>
                 <textarea
                   style={{
-                    border: messageError.length > 0 ? '3px solid red' : '',
+                    border: messageError.length > 0 ? '1px solid red' : '',
                   }}
                   value={message}
                   onChange={(e) => {
