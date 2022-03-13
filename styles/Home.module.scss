@@ -77,3 +77,17 @@
     }
   }
 }
+
+.mask {
+  width: 100%;
+  height: 5rem;
+  position: relative;
+  bottom: 3rem;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000, #000);
+
+  @include responsive(phone) {
+    height: 3rem;
+  }
+}
