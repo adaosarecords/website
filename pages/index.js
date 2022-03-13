@@ -63,8 +63,22 @@ export default function Home({}) {
       </header>
       <Layout home>
         <main>
+          <section className={styles.featuredVideo}>
+            <h1 className={styles.heading}>{t('FeaturedVideo')}</h1>
+            <ReactPlayer
+              className='video-featured'
+              url='https://www.youtube.com/watch?v=5gfZdDyIanQ'
+              playing={false}
+              loop={true}
+              width='100%'
+              height='100%'
+              playsinline
+              volume={1}
+              controls
+            />
+          </section>
           <section className={styles.studioRecordings}>
-            <h1>{t('StudioRecordings.Title')}</h1>
+            <h1 className={styles.heading}>{t('StudioRecordings.Title')}</h1>
             <div className={styles.albumContainer}>
               {RECORDINGS.map((album) => {
                 return (
