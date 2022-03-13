@@ -7,7 +7,7 @@
       "Groups": "GRUPOS MUSICALES"
     },
     "StudioRecordings": {
-      "Title": "Grabaciones Desde El Estudio",
+      "Title": "GRABACIONES DEL ESTUDIO",
       "Watch": "VER EN YOUTUBE",
       "Spotify": "VER EN SPOTIFY"
     }
@@ -18,8 +18,8 @@
     "Developer": "Desarrollado por"
   },
   "Contact": {
-    "Info": "Informacion",
-    "Questions": "¿Tienes Preguntas?",
+    "Info": "INFORMACION",
+    "Questions": "¿TIENES PREGUNTAS?",
     "Name": "Nombre",
     "Mail": "Correo Electronico",
     "Message": "Mensaje",

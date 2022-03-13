@@ -116,7 +116,7 @@ export default function Navbar() {
               <Image
                 className={styles.imgContainer__img}
                 src={Logo}
-                alt='head shot'
+                alt='logo'
               />
             </span>
           </div>
