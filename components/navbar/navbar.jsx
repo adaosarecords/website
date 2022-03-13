@@ -74,13 +74,13 @@ export default function Navbar() {
               {t('MusicVideos')}
             </a>
           </Link>
-          <Link href='/groups'>
+          <Link href='/artists'>
             <a
               className={
-                router.asPath === '/groups' ? styles.active : styles.default
+                router.asPath === '/artists' ? styles.active : styles.default
               }
             >
-              {t('Groups')}
+              {t('Artists')}
             </a>
           </Link>
           <Link href='/contact'>
@@ -146,13 +146,13 @@ export default function Navbar() {
               {t('MusicVideos')}
             </a>
           </Link>
-          <Link href='/groups'>
+          <Link href='/artists'>
             <a
               className={
-                router.asPath === '/groups' ? styles.active : styles.default
+                router.asPath === '/artists' ? styles.active : styles.default
               }
             >
-              {t('Groups')}
+              {t('Artists')}
             </a>
           </Link>
           <Link href='/contact'>

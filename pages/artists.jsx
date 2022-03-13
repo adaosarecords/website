@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Navbar from '../components/navbar/navbar'
+import { useTranslations } from 'next-intl'
+
+import { ARTISTS } from '../data/artists'
 import Layout from '../components/layout/layout'
 
 export async function getStaticProps({ locale }) {
@@ -11,6 +13,7 @@ export async function getStaticProps({ locale }) {
 }
 
 export default function Groups() {
+  const t = useTranslations('Home.Artists')
   return (
     <Layout>
       <Head>
@@ -19,7 +22,8 @@ export default function Groups() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
-        <h1>Groups</h1>
+        <h1>{t('Title')}</h1>
+        <section className={styles.container}></section>
       </main>
     </Layout>
   )

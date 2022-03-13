@@ -4,14 +4,17 @@
       "Home": "INICIO",
       "MusicVideos": "VIDEOS MUSICALES",
       "Contact": "CONTACTANOS",
-      "Groups": "GRUPOS MUSICALES"
+      "Artists": "ARTISTAS"
     },
     "StudioRecordings": {
       "Title": "GRABACIONES DEL ESTUDIO",
       "Watch": "VER EN YOUTUBE",
       "Spotify": "VER EN SPOTIFY"
     },
-    "FeaturedVideo": "VIDEO DESTACADO"
+    "FeaturedVideo": "VIDEO DESTACADO",
+    "Artists": {
+      "Title": "ARTISTAS"
+    }
   },
   "Footer": {
     "SubTitle": "Lo Mejor De La Música Costeña",
