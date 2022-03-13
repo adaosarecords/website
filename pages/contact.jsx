@@ -44,8 +44,15 @@ export default function Contact() {
     setIsFormValid(false)
   }, [])
 
-  const submitForm = (e) => {
-    console.log('submitedd')
+  const submitForm = async (e) => {
+    e.preventDefault()
+    await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, message }),
+    })
     setName('')
     setEmail('')
     setMessage('')
@@ -53,7 +60,6 @@ export default function Contact() {
     setTimeout(() => {
       setIsFormSubmitted(false)
     }, 3000)
-    e.preventDefault()
   }
 
   return (
@@ -70,7 +76,7 @@ export default function Contact() {
             <div className={styles.info}>
               <div className={styles.infoItem}>
                 <i className={`fa-solid fa-envelope ${styles.icon}`}></i>
-                <p>adaosarecords2021@gmail.com</p>
+                <p>adaosarecordsmusic@gmail.com</p>
               </div>
               <div className={styles.infoItem}>
                 <i className={`fa-solid fa-phone ${styles.icon}`}></i>

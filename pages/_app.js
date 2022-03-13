@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <NextIntlProvider locale='es' messages={pageProps.messages}>
       <Component {...pageProps} />
+      <Script src='https://smtpjs.com/v3/smtp.js' crossOrigin='anonymous' />
       <Script
         src='https://kit.fontawesome.com/abc21028e3.js'
         crossOrigin='anonymous'
