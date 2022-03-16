@@ -88,7 +88,7 @@ export default function Contact() {
               </div>
               <div className={styles.infoItem}>
                 <i className={`fa-solid fa-clock ${styles.icon}`}></i>
-                <p>Horas de Operacion: 9:00 AM - 05:00 PM</p>
+                <p>{t('Hours')}</p>
               </div>
             </div>
           </div>
@@ -107,9 +107,9 @@ export default function Contact() {
                     setName(e.target.value)
                     e.target.value.length > 0
                       ? setNameError('')
-                      : setNameError('El campo no puede estar vacio')
+                      : setNameError(t('NameFieldError'))
                   }}
-                  placeholder='mi nombre'
+                  placeholder={t('NameField')}
                   type='text'
                 />
                 {nameError.length > 0 && (
@@ -129,9 +129,9 @@ export default function Contact() {
                       .trim()
                       .match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)
                       ? setEmailError('')
-                      : setEmailError('Email inválido')
+                      : setEmailError(t('EmailFieldError'))
                   }}
-                  placeholder='micorreo@ejemplo.com'
+                  placeholder={t('EmailField')}
                   type='text'
                 />
                 {emailError.length > 0 && (
@@ -149,9 +149,9 @@ export default function Contact() {
                     setMessage(e.target.value)
                     e.target.value.length > 0
                       ? setMessageError('')
-                      : setMessageError('El campo no puede estar vacio')
+                      : setMessageError(t('MessageFieldError'))
                   }}
-                  placeholder='mi mensaje'
+                  placeholder={t('MessageField')}
                   rows={5}
                 />
                 {messageError.length > 0 && (
@@ -167,10 +167,7 @@ export default function Contact() {
                   </div>
                 ) : (
                   <div className={styles.successMessage}>
-                    <p>
-                      ¡Gracias! Nos pondremos en contacto contigo lo antes
-                      posible.
-                    </p>
+                    <p>{t('Success')}</p>
                   </div>
                 )}
               </div>

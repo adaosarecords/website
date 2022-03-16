@@ -12,7 +12,7 @@ import Button from '../components/button/button'
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      messages: (await import('../messages/es.json')).default,
+      messages: (await import('../messages/en.json')).default,
     },
   }
 }
