@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
   SwiperCore.use([Autoplay, Navigation, Pagination])
   const router = useRouter()
 
+  // use effect
   React.useEffect(() => {
     const handleRouteChange = (url) => {
       ga.pageview(url)
