@@ -36,5 +36,11 @@
     "MessageField": "My message",
     "MessageFieldError": "The field can't be empty",
     "Success": "Thank you! We will be in contact with you as soon as possible"
+  },
+  "404": {
+    "Title": "Page Not Found",
+    "Error": "Error code 404",
+    "Help": "We could not find the page you are looking for, you can go back home",
+    "Button": "Back Home"
   }
 }

@@ -6,10 +6,9 @@ import styles from '../styles/contact.module.scss'
 import Layout from '../components/layout/layout'
 
 export async function getStaticProps({ locale }) {
-  console.log('locale', locale)
   return {
     props: {
-      messages: await (await import('../messages/es.json')).default,
+      messages: await (await import(`../messages/${locale}.json`)).default,
     },
   }
 }

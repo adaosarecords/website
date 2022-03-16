@@ -36,5 +36,11 @@
     "MessageField": "Mi mensaje",
     "MessageFieldError": "El campo no puede estar vacio",
     "Success": "¡Gracias! Nos pondremos en contacto contigo lo antes posible."
+  },
+  "404": {
+    "Title": "¿Te Perdiste?",
+    "Error": "Codigo de Error 404",
+    "Help": "No encontramos esta pagina, puedes volver al inico",
+    "Button": "Volver al Inicio"
   }
 }

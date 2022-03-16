@@ -9,7 +9,7 @@ import styles from '../styles/artists.module.scss'
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      messages: await (await import('../messages/es.json')).default,
+      messages: await (await import(`../messages/${locale}.json`)).default,
     },
   }
 }
