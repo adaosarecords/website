@@ -68,7 +68,7 @@ export default function Home({}) {
             <h1 className={styles.heading}>{t('FeaturedVideo')}</h1>
             <ReactPlayer
               className='video-featured'
-              url='https://www.youtube.com/watch?v=5gfZdDyIanQ'
+              url='https://www.youtube.com/watch?v=RD1T-nv98uU'
               playing={false}
               loop={true}
               width='100%'
