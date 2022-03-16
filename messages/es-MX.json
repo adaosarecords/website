@@ -1,0 +1,40 @@
+{
+  "Home": {
+    "Nav": {
+      "Home": "INICIO",
+      "MusicVideos": "VIDEOS MUSICALES",
+      "Contact": "CONTACTANOS",
+      "Artists": "ARTISTAS"
+    },
+    "StudioRecordings": {
+      "Title": "GRABACIONES DEL ESTUDIO",
+      "Watch": "VER EN YOUTUBE",
+      "Spotify": "VER EN SPOTIFY"
+    },
+    "FeaturedVideo": "VIDEO DESTACADO",
+    "Artists": {
+      "Title": "ARTISTAS"
+    }
+  },
+  "Footer": {
+    "SubTitle": "Lo Mejor De La Música Costeña Guerrerense",
+    "Rights": "Todos Los Derechos Reservados",
+    "Developer": "Desarrollado por"
+  },
+  "Contact": {
+    "Info": "INFORMACION",
+    "Questions": "¿TIENES PREGUNTAS?",
+    "Name": "Nombre",
+    "Mail": "Correo Electronico",
+    "Message": "Mensaje",
+    "Send": "Enviar",
+    "Hours": "Horas de Operacion: 9:00 AM - 05:00 PM",
+    "NameField": "Nombre",
+    "NameFieldError": "El campo no puede estar vacio",
+    "EmailField": "micorreo@ejemplo.com",
+    "EmailFieldError": "Correo electronico invalido",
+    "MessageField": "Mi mensaje",
+    "MessageFieldError": "El campo no puede estar vacio",
+    "Success": "¡Gracias! Nos pondremos en contacto contigo lo antes posible."
+  }
+}

@@ -10,6 +10,8 @@ export default function Document() {
           rel='stylesheet'
         />
         <link rel='icon' href='/images/logo-orange.png' />
+        <link rel='alternate' href='http://example.com' hrefLang='en-us' />
+        <link rel='alternate' href='http://example.com/es' hrefLang='es-mx' />
       </Head>
       <body>
         <Main />

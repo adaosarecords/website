@@ -10,9 +10,10 @@ import { RECORDINGS } from '../data/recordings'
 import Button from '../components/button/button'
 
 export async function getStaticProps({ locale }) {
+  console.log('LOCALE', locale)
   return {
     props: {
-      messages: (await import('../messages/en.json')).default,
+      messages: (await import('../messages/es.json')).default,
     },
   }
 }

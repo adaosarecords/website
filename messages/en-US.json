@@ -1,0 +1,40 @@
+{
+  "Home": {
+    "Nav": {
+      "Home": "HOME",
+      "MusicVideos": "MUSIC VIDEOS",
+      "Contact": "CONTACT",
+      "Artists": "ARTISTS"
+    },
+    "StudioRecordings": {
+      "Title": "STUDIO RECORDINGS",
+      "Watch": "WATCH IN YOUTUBE",
+      "Spotify": "LISTEN IN SPOTIFY"
+    },
+    "FeaturedVideo": "FEATURED VIDEO",
+    "Artists": {
+      "Title": "ARTISTS"
+    }
+  },
+  "Footer": {
+    "SubTitle": "The Best of Coastal Music from Guerrero",
+    "Rights": "All rights reserved",
+    "Developer": "Developed by"
+  },
+  "Contact": {
+    "Info": "INFORMATION",
+    "Questions": "QUESTIONS?",
+    "Name": "Name",
+    "Mail": "Email",
+    "Message": "Message",
+    "Send": "Send",
+    "Hours": "Office Hours: 9:00 AM - 05:00 PM",
+    "NameField": "Name",
+    "NameFieldError": "The field can't be empty",
+    "EmailField": "myemail@email.com",
+    "EmailFieldError": "Invalid email address",
+    "MessageField": "My message",
+    "MessageFieldError": "The field can't be empty",
+    "Success": "Thank you! We will be in contact with you as soon as possible"
+  }
+}

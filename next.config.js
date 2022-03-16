@@ -4,7 +4,7 @@ const path = require('path')
 const nextConfig = {
   reactStrictMode: true,
   i18n: {
-    locales: ['es', 'en-US'],
+    locales: ['es', 'en', 'es-MX', 'en-US'],
     defaultLocale: 'es',
   },
   sassOptions: {
