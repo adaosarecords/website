@@ -1,11 +1,5 @@
 export const MUSIC_VIDEOS = [
   {
-    id: 1,
-    title: 'Sergio Sabino y sus Teclas Show || Locamente Enamorado',
-    videoUrl: 'https://www.youtube.com/watch?v=RgkU3sYwK28',
-    imageUrl: '/images/thumbvideos/teclas.png',
-  },
-  {
     id: 2,
     title: 'Raza Costeña Mix Corridos',
     videoUrl: 'https://www.youtube.com/watch?v=xCqK42_Z9nI',
