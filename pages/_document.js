@@ -35,6 +35,19 @@ export default function Document() {
                 })(window,document,'script','dataLayer','GTM-WQ8BNLB');`,
           }}
         />
+        <meta
+          name='description'
+          content='Adaosa Records Music. Lo mejor de la musica costena. San marcos Guerrero'
+        />
+        <meta
+          name='keywords'
+          content='Adaosa records music, Adao, Sabino, san marcos, guerrero, musica costena, adaosarecords, guerrero, los karkiks, la luz roja, conjunto mar azul'
+        />
+        <meta name='author' content='adaosa records music' />
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1.0'
+        ></meta>
 
         <link rel='icon' href='/images/logo-orange.png' />
         <link rel='alternate' href='http://example.com' hrefLang='en-us' />
