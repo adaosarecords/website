@@ -1,6 +1,7 @@
 .container {
-  margin: 1rem 18rem;
   padding-bottom: 12rem;
+  margin: 0 auto;
+  max-width: 75rem;
 
   @include responsive(tab_medium) {
     margin: 2rem 2rem;
