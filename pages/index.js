@@ -41,6 +41,7 @@ export default function Home({}) {
           content='Adaosa records music, Adao, Sabino, san marcos, guerrero, musica costeña, adaosarecords, guerrero, los karkiks, la luz roja, conjunto mar azul, musica costeña para bailar. Domingo Validivia. Los Donnys de Guerrero. Costa chica, san marcos guerrero'
         />
         <meta name='author' content='adaosa records music' />
+        <link rel='canonical' href='https://adaosarecords.com' />
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1.0'

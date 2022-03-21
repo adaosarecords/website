@@ -65,7 +65,11 @@ export default function Contact() {
     <Layout>
       <Head>
         <title>Adaosa Records</title>
-        <meta name='description' content='Adaosa records music productions' />
+        <link rel='canonical' href='https://adaosarecords.com/contact' />
+        <meta
+          name='description'
+          content='Adaosa records music productions. Contact. Contactanos.'
+        />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>

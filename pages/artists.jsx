@@ -20,7 +20,11 @@ export default function Groups() {
     <Layout>
       <Head>
         <title>Adaosa Records</title>
-        <meta name='description' content='Adaosa records music productions' />
+        <meta
+          name='description'
+          content='Adaosa records music productions. Artistas. Artists.'
+        />
+        <link rel='canonical' href='https://adaosarecords.com/artists' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
