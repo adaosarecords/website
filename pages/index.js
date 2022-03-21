@@ -32,7 +32,19 @@ export default function Home({}) {
     <>
       <Head>
         <title>Adaosa Records</title>
-        <meta name='description' content='Adaosa records music productions' />
+        <meta
+          name='description'
+          content='Adaosa records music productions. Lo mejor de la musica costeña. San marcos Guerrero. Adao"sa records. Adaosarecordsmusic.com'
+        />
+        <meta
+          name='keywords'
+          content='Adaosa records music, Adao, Sabino, san marcos, guerrero, musica costeña, adaosarecords, guerrero, los karkiks, la luz roja, conjunto mar azul, musica costeña para bailar. Domingo Validivia. Los Donnys de Guerrero. Costa chica, san marcos guerrero'
+        />
+        <meta name='author' content='adaosa records music' />
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1.0'
+        ></meta>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <header>
