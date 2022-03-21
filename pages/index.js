@@ -4,10 +4,11 @@ import Image from 'next/image'
 import Layout from '../components/layout/layout'
 import ReactPlayer from 'react-player/lazy'
 import { useTranslations } from 'next-intl'
+import dynamic from 'next/dynamic'
 
 import styles from '../styles/Home.module.scss'
 import { RECORDINGS } from '../data/recordings'
-import Button from '../components/button/button'
+const Button = dynamic(() => import('../components/button/button'))
 
 export async function getStaticProps({ locale }) {
   return {
@@ -101,7 +102,12 @@ export default function Home({}) {
               {RECORDINGS.map((album) => {
                 return (
                   <div className={styles.albumContainer__card} key={album.url}>
-                    <Image src={album.url} width={300} height={300} />
+                    <Image
+                      src={album.url}
+                      width={300}
+                      height={300}
+                      alt='artist album'
+                    />
                     <div className={styles.albumContainer_text}>
                       <h2>{album.artist}</h2>
                       <p>{album.subTitle}</p>

@@ -33,10 +33,7 @@ export default function Footer() {
       </p>
       <p className={styles.developer}>
         {t('Developer')}{' '}
-        <a
-          style={{ color: 'rgb(43, 135, 211)' }}
-          href='https://www.devandres.tech/'
-        >
+        <a style={{ color: '#0b15a1' }} href='https://www.devandres.tech/'>
           Andres Alcocer
         </a>
       </p>

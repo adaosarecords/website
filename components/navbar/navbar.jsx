@@ -114,6 +114,8 @@ export default function Navbar() {
           <div className={styles.imgContainer}>
             <span style={{ paddingRight: '0.5rem' }}>
               <Image
+                width={873}
+                height={891}
                 className={styles.imgContainer__img}
                 src={Logo}
                 alt='logo'
