@@ -50,8 +50,16 @@ export default function Document() {
         ></meta>
 
         <link rel='icon' href='/images/logo-orange.png' />
-        <link rel='alternate' href='http://example.com' hrefLang='en-us' />
-        <link rel='alternate' href='http://example.com/es' hrefLang='es-mx' />
+        <link
+          rel='alternate'
+          href='http://adaosarecordsmusic.com'
+          hrefLang='en-us'
+        />
+        <link
+          rel='alternate'
+          href='http://adaosarecordsmusic.com/es'
+          hrefLang='es-mx'
+        />
       </Head>
       <body>
         <noscript

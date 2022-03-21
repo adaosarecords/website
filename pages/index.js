@@ -31,7 +31,10 @@ export default function Home({}) {
   return (
     <>
       <Head>
-        <title>Adaosa Records</title>
+        <title>
+          Adaosa Records | Lo mejor de la musica costeña | The best of coastal
+          music | Adaosa Records Music
+        </title>
         <meta
           name='description'
           content='Adaosa records music productions. Lo mejor de la musica costeña. San marcos Guerrero. Adao"sa records. Adaosarecordsmusic.com'
@@ -40,13 +43,14 @@ export default function Home({}) {
           name='keywords'
           content='Adaosa records music, Adao, Sabino, san marcos, guerrero, musica costeña, adaosarecords, guerrero, los karkiks, la luz roja, conjunto mar azul, musica costeña para bailar. Domingo Validivia. Los Donnys de Guerrero. Costa chica, san marcos guerrero'
         />
+        <meta property='og:image' content='/images/logo-orange.png' />
         <meta name='author' content='adaosa records music' />
-        <link rel='canonical' href='https://adaosarecords.com' />
+        <link rel='canonical' href='https://adaosarecordsmusic.com' />
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1.0'
         ></meta>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/images/logo-orange.png' />
       </Head>
       <header>
         <ReactPlayer

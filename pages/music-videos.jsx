@@ -37,7 +37,7 @@ export default function MusicVideos() {
   return (
     <Layout>
       <Head>
-        <title>Adaosa Records</title>
+        <title>Adaosa Records | Videos Musicales | Music Videos</title>
         <link rel='canonical' href='https://adaosarecords.com/music-videos' />
         <meta
           name='description'

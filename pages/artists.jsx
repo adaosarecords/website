@@ -19,13 +19,15 @@ export default function Groups() {
   return (
     <Layout>
       <Head>
-        <title>Adaosa Records</title>
+        <title>
+          Adaosa Records | Coastal Music From Guerrero | Artistas | Artists
+        </title>
         <meta
           name='description'
           content='Adaosa records music productions. Artistas. Artists.'
         />
         <link rel='canonical' href='https://adaosarecords.com/artists' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/images/logo-orange.png' />
       </Head>
       <main>
         <h1>{t('Title')}</h1>

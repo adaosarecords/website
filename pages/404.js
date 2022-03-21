@@ -1,5 +1,5 @@
 import styles from '../styles/404.module.scss'
-import Link from 'next/link'
+import Head from 'next/head'
 import Button from '../components/button/button'
 import Navbar from '../components/navbar/navbar'
 import { useTranslations } from 'next-intl'
@@ -17,6 +17,17 @@ export default function NotFound404() {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>
+          Adaosa Records | Coastal Music From Guerrero | Artistas | Artists
+        </title>
+        <meta
+          name='description'
+          content='Adaosa records music productions. Not found.'
+        />
+        <link rel='canonical' href='https://adaosarecords.com' />
+        <link rel='icon' href='/images/logo-orange.png' />
+      </Head>
       <Navbar />
       <h1>{t('Title')}</h1>
       <h2>{t('Error')}</h2>

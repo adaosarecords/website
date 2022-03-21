@@ -64,13 +64,13 @@ export default function Contact() {
   return (
     <Layout>
       <Head>
-        <title>Adaosa Records</title>
+        <title>Adaosa Records | Contact | Contactanos </title>
         <link rel='canonical' href='https://adaosarecords.com/contact' />
         <meta
           name='description'
           content='Adaosa records music productions. Contact. Contactanos.'
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/images/logo-orange.png' />
       </Head>
       <main>
         <div className={styles.container}>
