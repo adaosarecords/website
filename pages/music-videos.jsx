@@ -16,6 +16,10 @@ export async function getStaticProps({ locale }) {
   }
 }
 
+const myLoader = ({ src, width, quality }) => {
+  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+}
+
 export default function MusicVideos() {
   const [currentVideo, setCurrentVideo] = React.useState(MUSIC_VIDEOS[0])
   const [widthDimension, setWidthDimension] = React.useState(0)
@@ -85,6 +89,7 @@ export default function MusicVideos() {
                   >
                     <div className={styles.sliderItem}>
                       <Image
+                        loader={({ src }) => `${src}?w=${100}&q=${75}`}
                         src={video.imageUrl}
                         layout={'fill'}
                         alt={'video thumb'}
