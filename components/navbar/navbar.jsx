@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/router'
 
-import Logo from '../../public/images/logo-orange.png'
 import styles from './navbar.module.scss'
 
 export async function getStaticProps({ locale }) {
@@ -117,7 +116,7 @@ export default function Navbar() {
                 width={873}
                 height={891}
                 className={styles.imgContainer__img}
-                src={Logo}
+                src={'https://images-v1.s3.amazonaws.com/logo-orange.png'}
                 alt='logo'
               />
             </span>
