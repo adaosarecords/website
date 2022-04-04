@@ -16,6 +16,9 @@
       "Title": "ARTISTS"
     }
   },
+  "Artist": {
+    "Members": "Members"
+  },
   "Footer": {
     "SubTitle": "The Best of Coastal Music from Guerrero",
     "Rights": "All rights reserved",

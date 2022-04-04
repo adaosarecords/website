@@ -1,6 +1,11 @@
 .container {
   margin-top: 2rem;
   display: flex;
+  padding-bottom: 5rem;
+
+  @include responsive(tab_portrait) {
+    display: block;
+  }
 
   .imgContainer {
     width: 125rem;
@@ -8,14 +13,21 @@
     padding-right: 1rem;
     padding-bottom: 1rem;
 
-    img {
-      position: relative;
-      right: 1rem !important;
+    @include responsive(tab_portrait) {
+      width: auto;
+      max-width: fit-content;
+      margin: 0 auto;
     }
   }
 
   .infoTxt {
     margin-left: 4rem;
+
+    @include responsive(tab_portrait) {
+      text-align: center;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
 
     h1 {
       margin: 0;
@@ -28,6 +40,10 @@
 
   .members {
     margin-top: 3rem;
+    @include responsive(tab_portrait) {
+      margin-top: 1rem;
+    }
+
     p {
       padding: 0;
       line-height: 0.5;

@@ -21,6 +21,9 @@
     "Rights": "All rights reserved",
     "Developer": "Developed by"
   },
+  "Artist": {
+    "Members": "Members"
+  },
   "Contact": {
     "Info": "INFORMATION",
     "Questions": "QUESTIONS?",

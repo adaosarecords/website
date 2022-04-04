@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 import Layout from '../../components/layout/layout'
 import { useRouter } from 'next/router'
@@ -21,6 +22,7 @@ export default function Artist() {
     groupMembers: [],
   })
   const router = useRouter()
+  const t = useTranslations('Artist')
   const { id } = router.query
 
   React.useState(() => {
@@ -49,7 +51,7 @@ export default function Artist() {
 
           {artist.groupMembers.length > 0 && (
             <div className={styles.members}>
-              <h3>Integrantes</h3>
+              <h3>{t('Members')}</h3>
               {artist.groupMembers.map((member, idx) => {
                 return <p key={`member-${Math.random() * idx}`}>{member}</p>
               })}
