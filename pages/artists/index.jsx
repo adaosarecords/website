@@ -49,7 +49,7 @@ export default function Groups({ artistsData }) {
         <section className={styles.artistContainer}>
           {artists.map((artist) => {
             return (
-              <Link passHref key={artist._id} href={`artists/${artist._id}`}>
+              <Link passHref key={artist._id} href={`/artists/${artist._id}`}>
                 <div className={styles.wrapper}>
                   <div width={'120px'} className={styles.card}>
                     <Image src={artist.image} width={300} height={300} />
