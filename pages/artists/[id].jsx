@@ -3,40 +3,37 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 import Layout from '../../components/layout/layout'
-import { useRouter } from 'next/router'
 import styles from '../../styles/artist.slug.module.scss'
 
-export async function getServerSideProps({ locale }) {
+export async function getServerSideProps({ locale, params }) {
+  const { id } = params
+  const res = await fetch(
+    `https://adaosarecords.ue.r.appspot.com/api/v1/artists/${id}`,
+    {
+      method: 'GET',
+    }
+  )
+  const data = await res.json()
+  console.log('data', data)
   return {
     props: {
       messages: await (await import(`../../messages/${locale}.json`)).default,
+      data,
     },
   }
 }
 
-export default function Artist() {
+export default function Artist({ data }) {
   const [artist, setArtist] = React.useState({
     image: '/#',
     name: '',
     bio: '',
     groupMembers: [],
   })
-  const router = useRouter()
   const t = useTranslations('Artist')
-  const { id } = router.query
 
   React.useState(() => {
-    const fetchArtist = async () => {
-      const res = await fetch(
-        `https://adaosarecords.ue.r.appspot.com/api/v1/artists/${id}`,
-        {
-          method: 'GET',
-        }
-      )
-      const data = await res.json()
-      setArtist(data)
-    }
-    fetchArtist()
+    setArtist(data)
   }, [])
 
   return (
