@@ -1,0 +1,28 @@
+.container {
+  margin-top: 2rem;
+  display: flex;
+
+  .imgContainer {
+    width: 125rem;
+  }
+
+  .infoTxt {
+    margin-left: 4rem;
+
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  .members {
+    margin-top: 3rem;
+    p {
+      padding: 0;
+      line-height: 0.5;
+    }
+  }
+}

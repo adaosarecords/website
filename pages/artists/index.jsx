@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 
 import Layout from '../../components/layout/layout'
 import styles from '../../styles/artists.module.scss'
@@ -48,12 +49,14 @@ export default function Groups({ artistsData }) {
         <section className={styles.artistContainer}>
           {artists.map((artist) => {
             return (
-              <div className={styles.wrapper} key={artist._id}>
-                <div width={'120px'} className={styles.card}>
-                  <Image src={artist.image} width={300} height={300} />
+              <Link passHref key={artist._id} href={`artists/${artist._id}`}>
+                <div className={styles.wrapper}>
+                  <div width={'120px'} className={styles.card}>
+                    <Image src={artist.image} width={300} height={300} />
+                  </div>
+                  <p className={styles.title}>{artist.name}</p>
                 </div>
-                <p className={styles.title}>{artist.name}</p>
-              </div>
+              </Link>
             )
           })}
         </section>
