@@ -11,6 +11,9 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
     prependData: `@import "main.scss";`,
   },
+  images: {
+    domains: ['images-v1.s3.amazonaws.com'],
+  },
 }
 
 module.exports = nextConfig
