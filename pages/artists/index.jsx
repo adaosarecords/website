@@ -42,7 +42,6 @@ export default function Groups({ artistsData }) {
           content='Adaosa records music productions. Artistas. Artists.'
         />
         <link rel='canonical' href='https://adaosarecords.com/artists' />
-        <link rel='icon' href='/images/logo-orange.png' />
       </Head>
       <main>
         <h1>{t('Title')}</h1>

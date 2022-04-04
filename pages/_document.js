@@ -24,7 +24,10 @@ export default function Document() {
           content='width=device-width, initial-scale=1.0'
         ></meta>
 
-        <link rel='icon' href='/images/logo-orange.png' />
+        <link
+          rel='icon'
+          href='https://images-v1.s3.amazonaws.com/logo-orange.png'
+        />
         <link
           rel='alternate'
           href='http://adaosarecordsmusic.com'
