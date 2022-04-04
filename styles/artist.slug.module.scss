@@ -4,6 +4,14 @@
 
   .imgContainer {
     width: 125rem;
+    background-color: $color-primary;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+
+    img {
+      position: relative;
+      right: 1rem !important;
+    }
   }
 
   .infoTxt {
