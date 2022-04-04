@@ -13,6 +13,8 @@ const nextConfig = {
   },
   images: {
     domains: ['images-v1.s3.amazonaws.com'],
+    loader: 'akamai',
+    path: '',
   },
 }
 
