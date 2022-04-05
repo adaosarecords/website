@@ -5,7 +5,23 @@ import { useTranslations } from 'next-intl'
 import Layout from '../../components/layout/layout'
 import styles from '../../styles/artist.slug.module.scss'
 
-export async function getServerSideProps({ locale, params }) {
+export async function getStaticPaths() {
+  const res = await fetch(
+    `https://adaosarecords.ue.r.appspot.com/api/v1/artists`,
+    {
+      method: 'GET',
+    }
+  )
+  const artists = await res.json()
+
+  const paths = artists.map((artist) => ({
+    params: { id: artist._id },
+  }))
+
+  return { paths, fallback: true }
+}
+
+export async function getStaticProps({ locale, params }) {
   const { id } = params
   const res = await fetch(
     `https://adaosarecords.ue.r.appspot.com/api/v1/artists/${id}`,
@@ -14,7 +30,6 @@ export async function getServerSideProps({ locale, params }) {
     }
   )
   const data = await res.json()
-  console.log('data', data)
   return {
     props: {
       messages: await (await import(`../../messages/${locale}.json`)).default,
