@@ -5,57 +5,27 @@ import { useTranslations } from 'next-intl'
 import Layout from '../../components/layout/layout'
 import styles from '../../styles/artist.slug.module.scss'
 
-export async function getStaticPaths() {
-  const res = await fetch(
-    `https://adaosarecords.ue.r.appspot.com/api/v1/artists`,
-    {
-      method: 'GET',
-    }
-  )
-  const artists = await res.json()
-
-  const paths = artists.map((artist) => ({
-    params: { id: artist._id },
-  }))
-
-  return { paths, fallback: true }
-}
-
-export async function getStaticProps({ locale, params }) {
-  const { id } = params
-  const res = await fetch(
-    `https://adaosarecords.ue.r.appspot.com/api/v1/artists/${id}`,
-    {
-      method: 'GET',
-    }
-  )
-  const data = await res.json()
-  return {
-    props: {
-      messages: await (await import(`../../messages/${locale}.json`)).default,
-      data,
-    },
-  }
-}
-
-export default function Artist({ data }) {
-  const [artist, setArtist] = React.useState({
-    image: '/#',
-    name: '',
-    bio: '',
-    groupMembers: [],
-  })
+export default function Artist({ artist }) {
+  // const [artist, setArtist] = React.useState({
+  //   image: '/#',
+  //   name: '',
+  //   bio: '',
+  //   groupMembers: [],
+  // })
   const t = useTranslations('Artist')
 
-  React.useState(() => {
-    setArtist(data)
-  }, [])
+  // React.useEffect(() => {
+  //   if (data) {
+  //     setArtist(data)
+  //   }
+  // }, [data])
+  // console.log('data -------', data)
 
   return (
     <Layout>
       <div className={styles.container}>
         <div className={styles.imgContainer}>
-          <Image src={artist.image} width={500} height={500} />
+          <Image src={artist.image} width={500} height={500} alt={'artist'} />
         </div>
         <div className={styles.infoTxt}>
           <h1>{artist.name}</h1>
@@ -73,4 +43,36 @@ export default function Artist({ data }) {
       </div>
     </Layout>
   )
+}
+
+export async function getStaticPaths() {
+  const res = await fetch(
+    `https://adaosarecords.ue.r.appspot.com/api/v1/artists`,
+    {
+      method: 'GET',
+    }
+  )
+  const artists = await res.json()
+  const paths = artists.map((artist) => ({
+    params: { id: artist._id },
+  }))
+
+  return { paths, fallback: false }
+}
+
+export async function getStaticProps({ locale, params }) {
+  const { id } = params
+  const res = await fetch(
+    `https://adaosarecords.ue.r.appspot.com/api/v1/artists/${id}`,
+    {
+      method: 'GET',
+    }
+  )
+  let artist = await res.json()
+  return {
+    props: {
+      messages: await (await import(`../../messages/${locale}.json`)).default,
+      artist,
+    },
+  }
 }
