@@ -6,20 +6,7 @@ import Layout from '../../components/layout/layout'
 import styles from '../../styles/artist.slug.module.scss'
 
 export default function Artist({ artist }) {
-  // const [artist, setArtist] = React.useState({
-  //   image: '/#',
-  //   name: '',
-  //   bio: '',
-  //   groupMembers: [],
-  // })
   const t = useTranslations('Artist')
-
-  // React.useEffect(() => {
-  //   if (data) {
-  //     setArtist(data)
-  //   }
-  // }, [data])
-  // console.log('data -------', data)
 
   return (
     <Layout>

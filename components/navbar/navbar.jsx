@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/router'
+import MenuIcon from '../../public/images/icons/menu.svg'
 
 import styles from './navbar.module.scss'
 
@@ -124,10 +125,12 @@ export default function Navbar() {
         </Link>
         <div className={styles.container__rightContent}>
           {!isMenuOpen && (
-            <span
-              onClick={() => setIsMenuOpen(true)}
-              className='fa-solid fa-bars'
-            />
+            <MenuIcon className={styles.menuIcon} />
+            // <div />
+            // <span
+            //   onClick={() => setIsMenuOpen(true)}
+            //   className='fa-solid fa-bars'
+            // />
           )}
           <Link href='/'>
             <a
