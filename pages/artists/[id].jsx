@@ -56,10 +56,14 @@ export async function getStaticProps({ locale, params }) {
     }
   )
   let artist = await res.json()
+  const updatedArtistBio = {
+    ...artist,
+    bio: locale === 'en' ? artist.bio.en : artist.bio.es,
+  }
   return {
     props: {
       messages: await (await import(`../../messages/${locale}.json`)).default,
-      artist,
+      artist: updatedArtistBio,
     },
   }
 }
