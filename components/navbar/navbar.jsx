@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/router'
 import MenuIcon from '../../public/images/icons/menu.svg'
+import CloseIcon from '../../public/images/icons/close.svg'
 
 import styles from './navbar.module.scss'
 
@@ -50,10 +51,10 @@ export default function Navbar() {
         }}
       >
         <div>
-          <span
+          <CloseIcon
             onClick={() => setIsMenuOpen(false)}
-            className='fa-solid fa-xmark'
-          ></span>
+            className={styles.menuItem}
+          />
         </div>
         <div className={styles.mobileMenu__items}>
           <Link href='/'>
@@ -125,12 +126,10 @@ export default function Navbar() {
         </Link>
         <div className={styles.container__rightContent}>
           {!isMenuOpen && (
-            <MenuIcon className={styles.menuIcon} />
-            // <div />
-            // <span
-            //   onClick={() => setIsMenuOpen(true)}
-            //   className='fa-solid fa-bars'
-            // />
+            <MenuIcon
+              onClick={() => setIsMenuOpen(true)}
+              className={styles.menuItem}
+            />
           )}
           <Link href='/'>
             <a

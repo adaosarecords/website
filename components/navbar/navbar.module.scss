@@ -105,7 +105,14 @@
   }
 }
 
-.menuIcon {
+.menuItem {
   fill: #fff;
-  height: 2rem;
+  height: 2.2rem;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
