@@ -66,7 +66,7 @@ export default function Home({}) {
         ></meta>
         <link rel='icon' href='/images/logo-orange.png' />
       </Head>
-      <header>
+      <header className={styles.heroBg}>
         <ReactPlayer
           className='react-player fixed-bottom'
           url='intro.mp4'
@@ -80,7 +80,6 @@ export default function Home({}) {
           controls={false}
         />
 
-        <div className={styles.mask} />
         {isMuted ? (
           <i
             className={'fa-solid fa-volume-xmark'}

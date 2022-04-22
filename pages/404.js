@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Button from '../components/button/button'
 import Navbar from '../components/navbar/navbar'
 import { useTranslations } from 'next-intl'
+import Layout from '../components/layout/layout'
 
 export async function getStaticProps({ locale }) {
   return {
