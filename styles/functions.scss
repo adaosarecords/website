@@ -1,7 +1,7 @@
 /* Media query manager */
 @mixin responsive($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 38em) {
+    @media only screen and (max-width: 42em) {
       // 600px --> 600 / 16
       @content;
     }

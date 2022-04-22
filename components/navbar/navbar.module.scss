@@ -27,7 +27,7 @@
       color: $color-secondary;
       transition: all 0.4s;
 
-      @include responsive(tab_medium) {
+      @include responsive(tab_portrait) {
         display: none;
       }
 
@@ -111,6 +111,11 @@
   position: absolute;
   top: 25px;
   right: 10px;
+  display: none;
+
+  @include responsive(tab_portrait) {
+    display: block;
+  }
 
   &:hover {
     cursor: pointer;
