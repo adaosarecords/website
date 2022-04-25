@@ -4,7 +4,7 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
-  padding: 0 2rem;
+  padding: 0 1rem;
   background-color: red;
   background-color: transparent;
   font-family: 'Montserrat', sans-serif;
@@ -22,8 +22,11 @@
     align-items: center;
     justify-content: center;
 
-    & > a {
+    & > a:not(:last-child) {
       margin-right: 2rem;
+    }
+
+    & > a {
       color: $color-secondary;
       transition: all 0.4s;
 
@@ -112,6 +115,10 @@
   top: 25px;
   right: 10px;
   display: none;
+
+  @include responsive(phone) {
+    right: -20px;
+  }
 
   @include responsive(tab_portrait) {
     display: block;
